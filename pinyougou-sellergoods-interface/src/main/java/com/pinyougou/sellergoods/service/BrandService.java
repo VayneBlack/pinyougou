@@ -24,5 +24,24 @@ public interface BrandService {
 	public PageResult findPage(int pageNum,int pageSize);
 	
 	public void add(TbBrand brand);
+	
+	/**
+	 * 根据ID查询实体
+	 * @param id
+	 * @return
+	 */
+	public TbBrand findOne(Long id);
+	
+	/**
+	 * 修改
+	 * @param brand
+	 */
+	public void update(TbBrand brand);
+	
+	/**
+	 * 删除
+	 * @param ids
+	 */
+	public void delete(Long[] ids);
 
 }
